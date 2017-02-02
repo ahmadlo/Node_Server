@@ -1,5 +1,7 @@
 var User = require('./user.model');
 
+var jwt=require('jwt-simple');
+
 //liste des userx
 exports.index = function(req, res) {
   User.findAll().then(function (user) {
@@ -17,6 +19,20 @@ exports.show = function(req, res) {
 
   });
 };
+// login with token 
+exports.login=function(req,res){
+  console.log('requ',req.body)
+
+  User.findOne({
+    where:{
+      email:req.body.email,
+      password:req.body.password}
+  }).then(function(user){
+    
+    return res.json(user);
+
+  })
+}
 
 //Creates a new user in the DB.
 exports.create = function(req, res) {
@@ -29,6 +45,7 @@ exports.create = function(req, res) {
       if(err) { return handleError(res, err); }
     });
 };
+
 
 // Updates an existing user in the DB.
 exports.update = function(req, res) {

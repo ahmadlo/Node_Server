@@ -18,5 +18,6 @@ module.exports = {
     "port":"3306",
 
   },
+  jwtTokenSecret:'YOUR_SECRET_STRING'
  
 };
