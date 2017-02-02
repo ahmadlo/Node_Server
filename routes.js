@@ -33,6 +33,7 @@ module.exports = function(app) {
   // Insert routes below
   //app.use('/api/lecons', require('./api/lecon'));
   app.use('/api/user',require('./model/user'));
+  app.use('/api/grocerylist',require('./model/grocerylist'));
   //app.use('/api/pet',require('./model/pet'));
   
   // All undefined asset or api routes should return a 404
