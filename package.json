@@ -1,0 +1,43 @@
+{
+  "name": "sgbf",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "author": "Ahmad Lo <ahmadou19@gmail.com>",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "compression": "~1.0.1",
+    "cookie-parser": "~1.0.1",
+    "ejs": "~0.8.4",
+    "errorhandler": "~1.0.0",
+    "helmet": "^3.1.0",
+    "method-override": "~1.0.0",
+    "morgan": "^1.7.0",
+    "mysql": "^2.12.0",
+    "sequelize": "~3.3.2",
+    "passport": "~0.2.0",
+    "lodash": "~2.4.1",
+    "socket.io": "^1.0.6",
+    "socket.io-client": "^1.0.6",
+    "socket.io-sequelize": "^1.0.1",
+    "socketio-jwt": "^2.0.2",
+    "express-jwt": "^0.1.3",
+    "express-session": "~1.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.11.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.7.1",
+    "nodemon": "^1.11.0"
+  }
+}
